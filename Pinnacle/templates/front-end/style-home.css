@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+:root {
+    --font-title: font-family: 'Poppins', sans-serif;
+    --font-subtitle: font-family: 'Gabarito', cursive;
+    --font-text: font-family: 'Oswald', sans-serif;
+    --color-primary: #000000;
+    --color-second: #fff;
+    --background-white: #fdfdfd;
+    --background-black: #020202;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-primary);
+    background-color: var(--background-white);
+}
+
+a{
+    color: var(--color-dark);
+  }
+
+.header-container {
+    width: 100%;
+    padding: 34px;
+    list-style: none;
+    margin-left: 5%;
+    
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+}
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.navbar ul{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    left: 17%;
+    list-style: none;
+    
+}
+
+.navbar li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.section-01 {
+    border: 2px solid;
+    width: 100%;
+}
+
+.title-main {
+    width: 100%;
+    padding: 34px;
+}
+
+.title-main h1{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3%;
+    font-size: 8vw;
+}
+
+.title-main h2{
+    font-family: 'Poppins', sans-serif;
+}
