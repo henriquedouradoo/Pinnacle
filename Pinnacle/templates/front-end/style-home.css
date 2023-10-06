@@ -40,7 +40,6 @@
 body {
     width: 100vw;
     height: 100vh;
-    user-select: none;
     overflow-x: hidden;
     color: var(--color-primary);
     background-color: var(--background-white);
@@ -153,6 +152,8 @@ a{
     color: #036634;
   }
 
+
+
 .section-01 {
     width: 100%;
 }
@@ -230,7 +231,7 @@ margin-top: 7%;
 }
 
 .info-01 {
-  height: 130%;
+  height: 100%;
   background-color: var(--background-green);
   width: 100%;
   text-align: center;
@@ -248,21 +249,76 @@ margin-top: 7%;
 
 .mensagem-borda b {
   color: #000000;
+  border-bottom: 2px solid #000000;
 }
 
-.mensagem-borda img {
-  width: 27%;
-  margin-top: -5%;
-}
-
-.info-left p {
-  position: relative;
-  right: 30%;
+.text-container {
   margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.info-left svg {
-  position: relative;
-  right: 40%;
-  top: 30%;
+#svg-icon {
+  display: inline-flex;
+  width: 5rem;
+  height: 4.5rem;
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: #fff;
+  font-size: 2rem;
+  border: 2px solid #000000;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: .5s ease;
 }
+
+#svg-icon:hover {
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.text-container h6{
+  color: #000000;
+}
+#text-01 p{
+  font-size: 22px;
+  margin-top: 2rem;
+  font-family: 'Gabarito', cursive;
+}
+
+#text-01 {
+  height: 400px;
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+#text-02 p{
+  font-size: 22px;
+  margin-top: 2rem;
+  font-family: 'Gabarito', cursive;
+}
+
+#text-02{
+  height: 400px;
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+#text-03 p{
+  font-size: 22px;
+  margin-top: 2rem;
+  font-family: 'Gabarito', cursive;
+}
+
+.img-conteudo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.img-conteudo img {
+  margin-top: 6%;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+}
+
