@@ -330,6 +330,12 @@ margin-top: 7%;
   font-family: 'Gabarito', cursive;
 }
 
+.img-andtext{
+  background: url(img/pexels-emma-li-5199173.jpg);
+  height: 120%;
+  width: 100%;
+  background-size: cover;
+}
 
 .ag-format-container {
   width: 100%;
