@@ -49,6 +49,17 @@ body {
     color: var(--color-primary);
     background-color: var(--background-white);
 }
+body.active {
+  background: #000000;
+}
+
+.nav-links.active {
+  color: #fff;
+}
+#toggle.active {
+  background: #fff;
+}
+
 
 a{
     color: var(--color-dark);
@@ -76,12 +87,44 @@ a{
 .navbar {
     justify-content: space-between;
     display: flex;
-    width: 100%;
+    width: 90%;
     align-items: center;
     list-style: none;
 
 }
 
+#toggle {
+  position: relative;
+  right: 3%;
+  width: 43px;
+  height: 21px;
+  border-radius: 160px;
+  background: #222;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+              inset 0 8px 8px rgba(0, 0, 0, 0.1),
+              inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21.5px;
+  height: 21px;
+  background: linear-gradient(to bottom, #444, #6b6b6b);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+              inset 0 4px 4px rgba(0, 0, 0, 0.2),
+              inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+ transition: 0.5s;
+}
+
+#toggle.active .indicator {
+  left: 22px;
+}
 .navbar ul{
     width: 100%;
     justify-content: center;
@@ -330,16 +373,9 @@ margin-top: 7%;
   font-family: 'Gabarito', cursive;
 }
 
-.img-andtext{
-  background: url(img/pexels-emma-li-5199173.jpg);
-  height: 120%;
-  width: 100%;
-  background-size: cover;
-}
-
 .ag-format-container {
   width: 100%;
-  height: 120%;
+  height: 130%;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
 }

@@ -20,6 +20,17 @@
                 <li class="center"><a href="#produtos-nav">Produtos</a></li>
                 <li class="upward"><a href="consultoria.html">Consultoria</a></li>
                 <li class="forward"><a href="suporte.html">Suporte</a></li>
+                <div id="toggle">
+                  <i class="indicator"></i>
+                </div>
+                <script>
+                  const body = document.querySelector('body');
+                  const toggle = document.getElementById('toggle');
+                  toggle.onclick = function(){
+                  toggle.classList.toggle('active');
+                  body.classList.toggle('active');
+                  }
+                </script>
               </ul>
         </nav>
     </header>
@@ -124,7 +135,7 @@
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Front-end development&#160;+ Selenium &#160;
+                Front-end &#160;+ Selenium &#160;
               </div>
               
             </a>
@@ -151,9 +162,6 @@
           </div>
         </div>
       </div>
-      <section class="img-andtext">
-        <h1>Pinna</h1>
-      </section>
       <div class="card-section">
         <h3>Assinaturas</h3>
       <div class="card-holder">
